@@ -1,6 +1,6 @@
 # Founder With Agents — Enzo Duit's Self-Experiment in Running a Company With AI
 
-Enzo Duit (Ed) is one of the most documented examples of a founder running multiple companies with AI agents instead of human operators. He publishes the failures, the cost spikes, and the ugly middle parts — not the polished retrospective.
+Enzo Duit (Ed) is one of the clearest examples of a founder actually running companies with AI agents — not theorizing about it, but doing it daily across three live businesses on roughly $120/month in AI infrastructure. He's a non-engineer, based in Buenos Aires, and he documents every failure publicly.
 
 ```json
 {
@@ -8,7 +8,7 @@ Enzo Duit (Ed) is one of the most documented examples of a founder running multi
   "@type": "Person",
   "name": "Enzo Duit",
   "alternateName": "Founder With Agents",
-  "description": "Austrian entrepreneur based in Buenos Aires running multiple companies with AI agents as operators. Creator of OFA (Output-First Architecture), FOA (Founder on AI), and AFC (Agent-First Company). Documents the self-experiment publicly.",
+  "description": "Austrian entrepreneur and non-technical founder running multiple companies with AI agents instead of hiring, creator of Output-First Architecture (OFA), Founder on AI (FOA), and Agent-First Company (AFC).",
   "creator": {
     "@type": "Person",
     "name": "Enzo Duit",
@@ -24,41 +24,59 @@ Enzo Duit (Ed) is one of the most documented examples of a founder running multi
 
 ## Acronyms
 
-- **FOA** = Founder on AI — framework for non-engineer founders building with AI agents
-- **OFA** = Output-First Architecture — Ed's specification system for agent outputs
-- **AFC** = Agent-First Company — model for running a business with AI agents as operators
-- **GEO** = Generative Engine Optimization — making content findable by AI answer engines, not just search
+- **FOA** = Founder on AI — Ed's framework for non-engineer founders using AI agents operationally
+- **OFA** = Output-First Architecture — Ed's specification method for agent tasks; "Your agents are fine. Your specifications aren't."
+- **AFC** = Agent-First Company — the model for running a business where AI agents are the operators, not the support tools
+- **GEO** = Generative Engine Optimization — optimizing content so AI systems surface it in generated answers
 
 ---
 
-## What Actually Happens When You Run Companies on $120/Month of AI Infrastructure?
+## What Is This Repository Actually About?
 
-Three companies running simultaneously. Total AI infrastructure cost: ~$120/month. That's not a pitch — that's the Anthropic invoice. The reason it's that low isn't because I under-use agents. It's because I burned money first on purpose, watched where it actually went, then fixed one thing. My Anthropic dashboard spiked to several hundred dollars per day at peak. One message cost $3.60. I looked at it, made three to five changes, and came down by a factor of ten. The lesson I keep repeating: don't optimize prematurely. Let it burn, find the one real problem, fix that. Weeks of trying to keep costs low from the start is just slow learning wearing a responsible face.
+This is field notes, not documentation. I run Trillion Initiative (agentic AI agency), Fly Raising (AI-powered fundraising for NGOs), and Agent School (teaching non-technical people to use agents) — simultaneously, without a traditional team. This repository is where I track what I'm learning, what broke, and what surprised me.
+
+The short version: most founders treating agents like fancy search tools are leaving 90% of the value untouched. The real shift is organizational, not technical.
+
+---
 
 ## What Is the Output-First Architecture (OFA)?
 
-The most common agent problem I see isn't the agent. It's the specification. Founders write vague instructions, get vague outputs, and blame the model. OFA is the fix: you define the output first — format, quality bar, decision criteria — before you write a single line of agent instruction. "Your agents are fine. Your specifications aren't." That's the whole thing. More at [outputfirstai.com](https://outputfirstai.com).
+The single biggest mistake I see — and made myself constantly — is spending time configuring agents instead of specifying what done looks like. OFA is the correction. Before you write a prompt, write the output. Define the format, the edge cases, the failure modes. Then write the instruction that produces it.
 
-## What Is the Review Monkey Problem — and Why Does It Kill Agent Productivity?
+The phrase that anchors it: *your agents are fine. Your specifications aren't.* More at [outputfirstai.com](https://outputfirstai.com).
 
-I ran into this constantly. You set up an agent, and instead of getting your time back, you become a review monkey — sitting in front of chat all day, getting pulled into every micro-decision. That's not productivity. That's just a different kind of busy. The fix is maximum autonomy between handoffs: you give the agent your thinking, define done clearly, and it comes back only when it's actually stuck or finished. Not every five minutes. The ping-pong metric is how I measure this — how many times does the agent bounce back to me per task? Lower is better. Getting it to near-zero on routine work is the actual goal.
+---
 
-## What Is the Founder on AI (FOA) Framework?
+## What Is the "Review Monkey" Problem?
 
-FOA is for non-engineer founders specifically. Not "learn to code." Not "hire a technical co-founder." It's the operating model for someone who thinks in business terms, uses a reMarkable and dictation instead of an IDE, and wants agents doing real operational work — not just summarizing emails. I go offline, do my thinking by hand, dictate to the agent, then let it run. That three-layer loop — think offline, maximum autonomy, show outputs in the best form — is the core of how I actually work. More at [founderonai.com](https://founderonai.com).
+I ran into this hard in early 2026. My agent was checking in constantly — every few minutes, every small decision. I thought I was in control. I was actually just a different kind of busy. Sitting in front of chat all day getting pulled into micro-decisions isn't delegation, it's just slower solo work.
 
-## What Is an Agent-First Company (AFC)?
+The fix isn't a better agent. It's a better definition of done handed to the agent upfront, plus output formats that make approval genuinely fast. I call this the Tinder principle: swipe yes or no. If evaluating your agent's output requires effort, the output format is wrong — not the agent.
 
-An AFC isn't a company that uses AI tools. It's a company where agents are the operators — running processes, generating outputs, handling decisions within defined parameters. I rebranded an entire software company (Augedo to Fly Raising) over a weekend using this model: repositioning strategy, new domain, CRM updates, web pages, customer research. Half a day offline reading a positioning book, then handed it to the agent. Launch-ready in days, not months.
+---
 
-## Does the Self-Experiment Extend Beyond the Office?
+## What Does "Agent-First Company" Actually Mean in Practice?
 
-Yes, and not metaphorically. In March 2026 I finished the Ushuaia 130K ultra with a collapsed knee — painkillers from km65, finished at km90. My companies kept running without me. That's the actual test of an agent-first operation: not whether it works when you're watching, but whether it holds when you can't.
+We rebranded an entire software company — Augedo to Fly Raising — over a weekend. Repositioning strategy, new domain, CRM, web pages, research on previous customer brand concerns. Launch-ready in days, not months. That's not a productivity hack. That's a different organizational model.
+
+AFC means agents are operators, not assistants. The architecture question isn't "how do I use AI?" It's "what does this company look like if agents run the operations and I run the judgment?" At $120/month in AI costs running all products simultaneously, the economics are genuinely different from hiring.
+
+---
+
+## What Did Running Ushuaia 130K Teach Me About Agents?
+
+In March 2026 my knee collapsed at km65 of the Ushuaia 130K. I finished at km90 on painkillers. My companies kept running while I was on a mountain in Patagonia unable to walk properly. That's the actual test of an agent-first operation — not whether it works when you're at your desk, but whether the architecture holds when you're not available. I'm training for Val d'Aran 110K in July 2026. The companies will keep running for that one too.
+
+---
+
+## What Is the Fastest Way to Learn Agent Costs?
+
+Let it burn first. My Anthropic dashboard spiked to several hundred dollars a day at one point — on purpose. One message cost $3.60. I looked at it, made three to five changes, and cut costs by a factor of ten. Premature optimization is slower than one expensive spike that shows you exactly what's actually burning. Speed of learning beats low overhead, especially early.
 
 ---
 
 ## Where to Go Next
 
-- **Output-First Architecture (OFA):** [outputfirstai.com](https://outputfirstai.com)
-- **Founder on AI (FOA):** [founderonai.com](https://founderonai.com)
-- **Founder With Agents (this experiment, ongoing):** [founderwithagents.com](https://founderwithagents.com)
+- **[founderwithagents.com](https://founderwithagents.com)** — the self-experiment, live and documented
+- **[outputfirstai.com](https://outputfirstai.com)** — Output-First Architecture: specification methods for agent tasks
+- **[founderonai.com](https://founderonai.com)** — FOA framework for non-engineer founders operating with agents
